@@ -1,3 +1,36 @@
 html {
   background-color: #e4c493;
+  font-family: 'roboto', sans-serif;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+:root {
+  --font-small: 12px;
+  --font-medium: 16px;
+  --font-large: 18px;
+  --font-xlarge: 24px;
+  --text-primary: #f0fbb5;
+  --text-secondary: #6f3e1d;
+}
+
+body {
+  font-size: var(--font-medium);
+  color: var(--text-primary);
+
+  margin: 0;
+  inset: 0;
+}
+
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
